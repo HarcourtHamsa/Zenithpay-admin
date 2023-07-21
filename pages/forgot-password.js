@@ -9,6 +9,7 @@ import {
   FormLabel,
   Input,
   Alert,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { useFormik } from "formik";
 import helpers from "../helpers";
@@ -58,13 +59,15 @@ function forgotPassword() {
     },
   });
   return (
-    <div>
+    <Flex 
+    minH={"100vh"}
+    align={"center"}
+    justify={"center"}
+    bg={useColorModeValue("#0B0E11", "gray.800")}>
       <ToastContainer />
       <Flex w="full" h="100vh" justifyContent="center" alignItems="center">
         <Box w={{ base: "fit-content", md: "400px" }} h="300px" p={"12px 25px"}>
-          <Stack align={"center"}>
-            <Image src={logo} alt="" />
-          </Stack>
+         
 
           <Text
             textTransform="uppercase"
@@ -79,14 +82,13 @@ function forgotPassword() {
           <form onSubmit={formik.handleSubmit}>
             <Stack spacing={4}>
               <FormControl id="email">
-                <FormLabel fontWeight="normal">Email address</FormLabel>
+                <FormLabel fontWeight="normal" color={"white"}>Email address</FormLabel>
                 <Input
                   type="email"
                   p={"6"}
                   id="email"
                   name="email"
-                  type="email"
-                  rounded={0}
+                  rounded={'lg'}
                   onChange={formik.handleChange}
                   value={formik.values.email}
                 />
@@ -94,7 +96,7 @@ function forgotPassword() {
 
               <Button
                 colorScheme={"yellow"}
-                rounded={0}
+                rounded={'lg'}
                 fontWeight="normal"
                 type="submit"
                 mt={6}
@@ -108,7 +110,7 @@ function forgotPassword() {
           </form>
         </Box>
       </Flex>
-    </div>
+    </Flex>
   );
 }
 

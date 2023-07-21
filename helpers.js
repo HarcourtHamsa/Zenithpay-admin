@@ -1,8 +1,10 @@
 import axios from "axios";
+
 const environment = {
-  prod: "https://test-service-3tml.onrender.com/",
-  dev: 'http://localhost:8080/',
+  prod: "https://zenithpay.onrender.com",
+  dev: "http://localhost:8080",
 };
+
 axios.defaults.baseURL = environment.prod;
 //
 const helpers = {};

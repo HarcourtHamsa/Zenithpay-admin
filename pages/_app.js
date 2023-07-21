@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <AuthProvider>
       <Head>
-        <title>Admin - Crytoverse</title>
+        <title>Admin - Zenithpay</title>
         <meta
           name="description"
           content="Legit Crypto Option Admin Dashboard"

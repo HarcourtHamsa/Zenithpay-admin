@@ -86,9 +86,7 @@ export default function Login() {
           px={6}
           // bg="red"
         >
-          <Stack align={"center"} mb={"-1"}>
-            <ImBasecamp size={30} color="white" />
-          </Stack>
+         
           <Box
             rounded={"0"}
             // bg={useColorModeValue("white", "gray.700")}
@@ -104,7 +102,7 @@ export default function Login() {
                 textAlign="center"
                 mb={10}
               >
-                Admin Login
+                Zenithpay Admin Login
               </Text>
               <Stack spacing={4}>
                 <FormControl id="email">

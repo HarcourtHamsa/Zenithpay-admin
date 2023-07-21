@@ -105,7 +105,6 @@ function User() {
                       p={"6"}
                       id="_id"
                       name="_id"
-                      type="id"
                       onChange={formik.handleChange}
                       value={formik.values._id}
                       disabled
